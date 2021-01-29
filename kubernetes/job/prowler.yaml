@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: prowler
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/soluble-repo/soluble-prowler:latest
+          name: prowler
+          imagePullPolicy: Always
+          #command: [ "/prowler/soluble-prowler" ]
+          args: [ "-M", "json,html" ]
+      restartPolicy: Never

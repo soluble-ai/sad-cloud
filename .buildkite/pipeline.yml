@@ -1,0 +1,30 @@
+steps:
+  - label: ":gear: tfsec scans terraform"
+    timeout_in_minutes: 15
+    command:
+      - "soluble tf-scan tfsec --upload"
+    key: "tfsec-aws-terraform"
+  - label: ":gear: checkov scans terraform"
+    timeout_in_minutes: 15
+    command:
+      - "soluble tf-scan checkov --upload"
+    key: "checkov-terraform"
+  - label: ":gear: terrascan scans terraform aws"
+    timeout_in_minutes: 15
+    command:
+      - "soluble tf-scan terrascan -d terraform/aws --upload"
+    key: "terrascan-aws-terraform"
+  - label: ":gear: terrascan scans terraform gcp"
+    timeout_in_minutes: 15
+    command:
+      - "soluble tf-scan terrascan -d terraform/gcp --upload"
+    key: "terrascan-gcp-terraform"
+  - label: ":gear: terrascan scans terraform azure"
+    timeout_in_minutes: 15
+    command:
+      - "soluble tf-scan terrascan -d terraform/azure --upload"
+    key: "terrascan-azure-terraform"
+  - label: ":eyes: scan for secrets"
+    timeout_in_minutes: 15
+    command:
+      - " soluble secrets-scan --upload"

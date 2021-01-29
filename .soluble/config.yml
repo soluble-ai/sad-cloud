@@ -1,0 +1,2 @@
+suppressions:
+  - "tfsec-gcp10"
