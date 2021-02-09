@@ -1,2 +1,2 @@
 suppressions:
-  - "tfsec-gcp10"
+  - "tfsec-gcp010"
