@@ -1,3 +1,4 @@
 steps:
+  - "ls -al"
 suppressions:
   - "tfsec-gcp010"
