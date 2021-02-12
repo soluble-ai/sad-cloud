@@ -1,5 +1,5 @@
 steps:
   - "ls -al"
-  - "soluble version"
+  - "soluble tf-scan"
 suppressions:
   - "tfsec-gcp010"
