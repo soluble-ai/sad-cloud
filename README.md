@@ -10,3 +10,4 @@ for AWS, GCP and Azure.
 fizz
 fizz
 foo
+foo
