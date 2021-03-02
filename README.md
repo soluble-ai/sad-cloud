@@ -11,3 +11,4 @@ fizz
 fizz
 foo
 foo
+fizz
