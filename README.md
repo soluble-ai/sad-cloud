@@ -21,3 +21,4 @@ foo
 foo
 foo
 FOO
+FOO
