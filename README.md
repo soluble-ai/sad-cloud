@@ -16,3 +16,4 @@ fizz
 FOO
 FOO
 foo
+foo
