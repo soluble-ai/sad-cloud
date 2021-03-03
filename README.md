@@ -18,3 +18,4 @@ FOO
 foo
 foo
 foo
+foo
