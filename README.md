@@ -17,3 +17,4 @@ FOO
 FOO
 foo
 foo
+foo
