@@ -15,3 +15,4 @@ fizz
 fizz
 FOO
 FOO
+foo
