@@ -1,5 +1,0 @@
-steps:
-  - "ls -al"
-  - "soluble tf-scan"
-suppressions:
-  - "tfsec-gcp010"
